@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@500&display=swap");
+:root {
+  --dark: #252a34;
+  --cyan: #08d9d6;
+  --pink: #ff2e63;
+  --white: #eaeaea;
+}
+* {
+  box-sizing: border-box;
+  font-family: "montserrat";
+  color: var(--white);
+}
+html {
+  height: fill-available;
+  height: -webkit-fill-available;
+}
+body {
+  
+  height: 100%;
+  min-height: 100vh;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+}
+#container{
+  min-height: 100%;
+  width: 100%;
+}
+#title h1{
+  margin: 0;
+  letter-spacing: 1px;
+}
+#title p{
+  color: var(--pink);
+}
+input {
+  text-align: center;
+  color: var(--pink) !important;
+}
+#result-field h1,
+p {
+  text-align: center;
+  white-space: pre;
+}
+#result-field span {
+  color: var(--cyan);
+}
+#result-field,
+#input-field {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  border: rgba(255, 255, 255, 0.5) 1px solid;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  min-height: 300px;
+  margin: 10px;
+}
+@media screen and (max-width: 767px) {
+  #result-field,
+#input-field {
+  max-width: 400px;
+}
+}
+
